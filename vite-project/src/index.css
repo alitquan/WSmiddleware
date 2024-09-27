@@ -1,0 +1,30 @@
+:root {
+	--color1: #594F3B;
+	--color2: #776258;
+	--color3: #896279;
+	--color4: #9C7CA5;
+	--color5: #ADB2D3;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+#root {
+	height: 100vh;
+	width: 100%;
+	background-color: var(--color4);
+} 
+
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use 'Roboto' as the default font */
+}
+
+.container {
+	margin-bottom: 3vh;
+}
+
+

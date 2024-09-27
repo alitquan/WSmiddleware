@@ -1,0 +1,63 @@
+:root {
+	--siMargin1: 6vh;
+	--siMargin2: 6vh;
+} 
+.topbar {
+	background-color: var(--color3);
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	padding-left: 2vw;
+	font-size: 2.8vh;
+	font-weight: 600;
+	color: white;
+}
+
+
+.signin {
+	background-color: var(--color5);
+	height: 57vh;
+	width: 23%;
+	margin: 15vh auto;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column; 
+} 
+
+.signin h3 {
+	margin: 3vh auto;
+	font-size: 2.3rem;
+	color: white;
+	margin-bottom: var(--siMargin1); 
+} 
+
+.signInField {
+	font-size: 3vh;
+	margin: 0 15%;
+	margin-bottom: var(--siMargin2);
+}
+
+.signInField p {
+	margin-bottom: 10px;
+	color: white;
+}
+
+.signInField input {
+	width: 98%;
+	height: 3vh;
+	border-radius: 4px;
+	padding: 5px; 
+	font-size: 1.75vh;
+}
+
+
+.loginButton {
+	margin: 0 auto;
+	margin-top: 1vh;
+	height: 6vh;
+	width:  12vh;
+	font-size: 2.3vh;
+	border-radius: 10px;
+	color: var(--color2);
+}
+
