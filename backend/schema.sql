@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+	id INT auto_increment PRIMARY KEY,
+	username VARCHAR(24) NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	first_name VARCHAR(20) NOT NULL,
+	last_name VARCHAR(20) NOT NULL,
+	email VARCHAR(36) NOT NULL,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
