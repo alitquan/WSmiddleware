@@ -1,29 +1,46 @@
+:root {
+	--bRadius1: 10px; 
+	--bWidth1: 3.4px;
+}
+
 .dashboard {
 	width: 75%;
 	height: 80vh;
 	background-color: var(--color2);
 	display: flex;
 	flex-direction: row;
-	border-radius: 10px;
+	border-radius: var(--bRadius1);
+	color: var(--color1);
 }
 
 .dashboard .features {
-	border-radius: 10px 0 0 10px;
+	border-radius: var(--bRadius1) 0 0 var(--bRadius1);
 }
 
 
 .dashboard .space{
-	border-radius: 10px;
+	border-radius: 0px var(--bRadius1) var(--bRadius1) 0;
 }
 
-
-
 .features {
-	flex: 4;
+	flex: 3;
 	background-color: var(--color5);
+	border: var(--bWidth1) solid var(--color2);
 }
 
 .space {
 	flex: 10;
-	background-color: var(--color2);
+	background-color: var(--color5);
+	border: var(--bWidth1) solid var(--color2);
+	border-left: 0px;
 }
+
+
+
+
+
+
+
+
+
+
