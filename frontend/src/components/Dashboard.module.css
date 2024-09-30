@@ -1,0 +1,29 @@
+.dashboard {
+	width: 75%;
+	height: 80vh;
+	background-color: var(--color2);
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+}
+
+.dashboard .features {
+	border-radius: 10px 0 0 10px;
+}
+
+
+.dashboard .space{
+	border-radius: 10px;
+}
+
+
+
+.features {
+	flex: 4;
+	background-color: var(--color5);
+}
+
+.space {
+	flex: 10;
+	background-color: var(--color2);
+}

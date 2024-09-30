@@ -2,6 +2,7 @@
 	--siMargin1: 6vh;
 	--siMargin2: 6vh;
 } 
+
 .topbar {
 	background-color: var(--color3);
 	height: 5vh;

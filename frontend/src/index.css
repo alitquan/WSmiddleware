@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+	margin: 0 auto;
 	margin-bottom: 3vh;
 }
 

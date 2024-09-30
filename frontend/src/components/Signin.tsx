@@ -3,7 +3,7 @@ import styles from './Stylesheet.module.css'
 import '../App.css'
 import axios from 'axios';
 
-function SignIn () {
+function SignIn ({onLogin}) {
 
 
 	const [username, setUsername] = useState('');
@@ -18,7 +18,7 @@ function SignIn () {
             });
             localStorage.setItem('token', response.data.token); // Save token
             // Redirect or perform further actions
-			
+			onLogin();	
 			console.log("Completed");
         } catch (err) {
 			console.log(err);

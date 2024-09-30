@@ -76,12 +76,6 @@ connectToDatabase()
 
 
 
-
-
-
-
-
-
 // #############################
 // ********** ROUTES ***********
 // #############################
@@ -97,12 +91,26 @@ app.post('/register', async (req, res) => {
 
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
+	console.log('Login hit');
+	
+	// retrieve user from database
+    const [rows] = await connection.query('SELECT * FROM users WHERE username = ?', [username]);
+	console.log(rows);
+   	const user = rows[0]; 
 
-    // const isMatch = await bcrypt.compare(password, user.password);
-    // if (!isMatch) return res.status(400).send('Invalid credentials');
+    // Compare the entered password with the hashed password from the database
+    const isMatch = await bcrypt.compare(password, user.password); 
 
-    // const token = jwt.sign({ username: user.username }, 'your_jwt_secret', { expiresIn: '1h' });
-    // res.json({ token });
+    if (!isMatch) {
+        return res.status(400).send('Invalid credentials');
+    }
+
+	// If the passwords match, generate a JWT token (if using JWT)
+	console.log("passing tokens");
+    const token = jwt.sign({ username: user.username }, 'your_jwt_secret', { expiresIn: '1h' });
+    res.json({ token });
+
+
 });
 
 app.listen(PORT, () => {
