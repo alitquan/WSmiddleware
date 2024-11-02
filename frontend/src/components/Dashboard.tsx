@@ -9,7 +9,13 @@ function Dashboard() {
 		<> 
 			<div className={`container ${dash.dashboard}`}>
 				<div className={dash.features}>
-					Features
+					<ul className={dash.temp}> 
+						<li> Dashboard </li> 
+						<li> Incoming Calls</li> 
+						<li> All Tickets </li> 
+						<li> Announcements </li> 
+						<li> Feature 5 </li> 
+					</ul> 
 				</div> 
 
 				<div className= {dash.space}> 
